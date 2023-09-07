@@ -615,7 +615,7 @@ main .container .right {
   }
 }
 
-/* ============ Media Query (Small tablets and mobile phones) ================== */
+/* ============ Media Query (Small tablets) ================== */
 @media screen and (max-width: 992px) {
 
   nav .search-bar {
@@ -651,6 +651,22 @@ main .container .right {
     display: none;
   }
 
+}
+/* ============ Media Query (mobile phones) ================== */
+@media screen and (max-width: 600px) {
+ 
+  main .container {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .create .btn {
+    display: none;
+  }
+
+  .sidebar {
+   display: none;
+  }
 }
 
 
